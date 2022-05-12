@@ -6,7 +6,8 @@
 	"plugins": {
 		"CapacitorFirebaseAuth": {
 			"providers": [
-				"google.com"
+				"google.com",
+				"facebook.com"
 			],
 			"languageCode": "en",
 			"nativeAuth": true
@@ -14,6 +15,11 @@
 		"permissions": {
 			"google": [
 				"profile"
+			],
+			"facebook": [
+				"public_profile",
+				"email",
+				"user_friends"
 			]
 		}
 	}

@@ -4,4 +4,7 @@
     <string name="title_activity_main">ionic-firebase-auth</string>
     <string name="package_name">com.ionicfirebaseauth.mobile</string>
     <string name="custom_url_scheme">com.ionicfirebaseauth.mobile</string>
+    <string name="facebook_app_id">[APP_ID]</string>
+  <string name="facebook_client_token">[CLIENT_TOKEN]</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]://authorize</string>
 </resources>

@@ -7,12 +7,13 @@ const config: CapacitorConfig = {
   bundledWebRuntime: false,
   plugins: {
     CapacitorFirebaseAuth: {
-      providers: ['google.com'],
+      providers: ['google.com', 'facebook.com'],
       languageCode: 'en',
       nativeAuth: true,
     },
     permissions: {
       google: ['profile'],
+      facebook: ['public_profile', 'email', 'user_friends'],
     },
   },
  };

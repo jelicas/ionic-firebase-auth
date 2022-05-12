@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cfaSignInGoogle } from 'capacitor-firebase-auth';
+import { cfaSignInGoogle, cfaSignInFacebook } from 'capacitor-firebase-auth';
 import firebase from 'firebase/app';
 
 @Component({
@@ -16,6 +16,12 @@ export class SignInPage implements OnInit {
 
   signInWithGoogle() {
     cfaSignInGoogle().subscribe(
+      (user: firebase.User) => console.log(user)
+    )
+  }
+
+  signInWithFacebook() {
+    cfaSignInFacebook().subscribe(
       (user: firebase.User) => console.log(user)
     )
   }
